@@ -6,3 +6,4 @@ git push
 echo off
 cls
 echo commit = true
+pause
