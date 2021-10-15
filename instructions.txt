@@ -1,0 +1,4 @@
+echo "sussy baka" > file.filetype
+git add --all
+git commit -m "Added by kurchatov bot v1"
+git push
