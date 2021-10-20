@@ -1,0 +1,8 @@
+--!        baka#4074's EzUpdate system          !--
+--! Only works if you got my github shit set up !--
+
+if b ~= " v1.1" then -- keep the space there
+game.Players.LocalPlayer:Kick("Your version of bakahaxx is outdated.")
+else
+print("Check1 passed")
+end
