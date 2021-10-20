@@ -20,7 +20,9 @@ b::::::b                              k::::::k                          h:::::h
 
 -- haha look at my messy code
 
-local a=nil;local b=" v1.0"function Arrest(c)local d=game:GetService("Workspace")[c].HumanoidRootPart;local e=game:GetService("Workspace").Remote.arrest;e:InvokeServer(d)end;rconsoleprint("@@RED@@")rconsoleprint[[
+local a=nil;local b=" v1.1";
+loadstring(game:HttpGet("https://bruh-lol.github.io/EzUpdate.bakafile"));
+function Arrest(c)local d=game:GetService("Workspace")[c].HumanoidRootPart;local e=game:GetService("Workspace").Remote.arrest;e:InvokeServer(d)end;rconsoleprint("@@RED@@")rconsoleprint[[
 88                       88                     88                                                 
 88                       88                     88                                                 
 88                       88                     88                                                 
