@@ -18,34 +18,17 @@ b::::::b                              k::::::k                          h:::::h
  bbbbbbbbbbbbbbbb     aaaaaaaaaa  aaaakkkkkkkk    kkkkkkkaaaaaaaaaa  aaaahhhhhhh     hhhhhhh  aaaaaaaaaa  aaaaxxxxxxx      xxxxxxxxxxxxxx      xxxxxxx
 --]]
 
--- haha look at my messy code
+--! Variables !--
+local user = game.Players.LocalPlayer
 
-local a=nil;local b=" v1.0";loadstring(game:HttpGet("https://bruh-lol.github.io/EzUpdate.bakafile"));function Arrest(c)local d=game:GetService("Workspace")[c].HumanoidRootPart;local e=game:GetService("Workspace").Remote.arrest;e:InvokeServer(d)end;rconsoleprint("@@RED@@")rconsoleprint[[
-88                       88                     88                                                 
-88                       88                     88                                                 
-88                       88                     88                                                 
-88,dPPYba,   ,adPPYYba,  88   ,d8   ,adPPYYba,  88,dPPYba,   ,adPPYYba,  8b,     ,d8  8b,     ,d8  
-88P'    "8a  ""     `Y8  88 ,a8"    ""     `Y8  88P'    "8a  ""     `Y8   `Y8, ,8P'    `Y8, ,8P'   
-88       d8  ,adPPPPP88  8888[      ,adPPPPP88  88       88  ,adPPPPP88     )888(        )888(     
-88b,   ,a8"  88,    ,88  88`"Yba,   88,    ,88  88       88  88,    ,88   ,d8" "8b,    ,d8" "8b,   
-8Y"Ybbd8"'   `"8bbdP"Y8  88   `Y8a  `"8bbdP"Y8  88       88  `"8bbdP"Y8  8P'     `Y8  8P'     `Y8  ]]if game.GameId==73885730 then rconsoleprint("@@LIGHT_BLUE@@")rconsoleprint("Prison Life")rconsoleprint("\n")rconsolename("bakahaxx"..b)a="prison_life"else rconsoleprint("\nGame is unsupported!")rconsoleprint("\n")a="universal"rconsolename("bakahaxx"..b)end;while a=="prison_life"do rconsoleprint("@@WHITE@@")rconsoleprint("> ")local f=rconsoleinput("")local g=f:split(" ")if f=="arrest all"then local h=game.Players.LocalPlayer;local i=h.Character.HumanoidRootPart.CFrame;for j,k in pairs(game.Teams.Criminals:GetPlayers())do if k.Name~=h.Name then local j=10;repeat wait()j=j-1;game.Workspace.Remote.arrest:InvokeServer(k.Character.HumanoidRootPart)h.Character.HumanoidRootPart.CFrame=k.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,1)until j==0;rconsoleinfo(game:GetService("Lighting").TimeOfDay..": "..k.Name.." was arrested.")end end;h.Character.HumanoidRootPart.CFrame=i elseif f=="superpunch"then mainRemotes=game.ReplicatedStorage;meleeRemote=mainRemotes["meleeEvent"]mouse=game.Players.LocalPlayer:GetMouse()punching=false;cooldown=false;function punch()cooldown=true;local l=Instance.new("Part",game.Players.LocalPlayer.Character)l.Transparency=1;l.Size=Vector3.new(5,2,3)l.CanCollide=false;local m=Instance.new("Weld",l)m.Part0=game.Players.LocalPlayer.Character.Torso;m.Part1=l;m.C1=CFrame.new(0,0,2)l.Touched:connect(function(n)if game.Players:FindFirstChild(n.Parent.Name)then local o=game.Players:FindFirstChild(n.Parent.Name)if o.Name~=game.Players.LocalPlayer.Name then l:Destroy()for j=1,100 do meleeRemote:FireServer(o)end end end end)wait(1)cooldown=false;l:Destroy()end;mouse.KeyDown:connect(function(p)if cooldown==false then if p:lower()=="f"then punch()end end end)rconsolewarn("Super punch enabled")elseif f=="removewalls"then wait(0.1)game.Workspace.Prison_Halls.walls:Remove()wait(0.1)game.Workspace.Prison_Halls.roof:Remove()wait(0.1)game.Workspace.Prison_Halls.outlines:Remove()wait(0.1)game.Workspace.Prison_Halls.lights:Remove()wait(0.1)Workspace.Prison_Halls.accent:Remove()wait(0.1)game.Workspace.Prison_Halls.glass:Remove()wait(0.1)game.Workspace.Prison_Cellblock.b_front:Remove()wait(0.1)game.Workspace.Prison_Cellblock.doors:Remove()wait(0.1)game.Workspace.Prison_Cellblock.c_tables:Remove()wait(0.1)game.Workspace.Prison_Cellblock.a_front:Remove()wait(0.1)game.Workspace.Prison_Cellblock.b_outerwall:Remove()wait(0.1)game.Workspace.Prison_Cellblock.c_wall:Remove()wait(0.1)game.Workspace.Prison_Cellblock.b_wall:Remove()wait(0.1)game.Workspace.Prison_Cellblock.c_hallwall:Remove()wait(0.1)game.Workspace.Prison_Cellblock.a_outerwall:Remove()wait(0.1)game.Workspace.Prison_Cellblock.b_ramp:Remove()wait(0.1)game.Workspace.Prison_Cellblock.a_ramp:Remove()wait(0.1)game.Workspace.Prison_Cellblock.a_walls:Remove()wait(0.1)game.Workspace.Prison_Cellblock.Cells_B:Remove()wait(0.1)game.Workspace.Prison_Cellblock.Cells_A:Remove()wait(0.1)game.Workspace.Prison_Cellblock.c_corner:Remove()wait(0.1)game.Workspace.Prison_Cellblock.Wedge:Remove()wait(0.1)game.Workspace.Prison_Cellblock.a_ceiling:Remove()wait(0.1)game.Workspace.Prison_Cellblock.b_ceiling:Remove()wait(0.1)game.Workspace.City_buildings:Remove()wait(0.1)game.Workspace.Prison_OuterWall:Remove()wait(0.1)game.Workspace.Prison_Fences:Remove()rconsoleinfo("Walls removed")rconsolewarn("DO NOT run the removewalls command again! If done so, the script will break!")elseif f=="m9"then local q=game:GetService("Workspace")["Prison_ITEMS"].giver.M9.ITEMPICKUP;local r=game:GetService("Workspace").Remote.ItemHandler;r:InvokeServer(q)rconsoleinfo("You were given an M9.")elseif f=="ak47"then local q=game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP;local r=game:GetService("Workspace").Remote.ItemHandler;r:InvokeServer(q)rconsoleinfo("You were given an AK47.")elseif f=="fly"or f=="Fly me"or f=="Fly"then repeat wait()until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso")and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")local mouse=game.Players.LocalPlayer:GetMouse()repeat wait()until mouse;local o=game.Players.LocalPlayer;local s=o.Character.Torso;local t=true;local u=true;local v={f=0,b=0,l=0,r=0}local w={f=0,b=0,l=0,r=0}local x=35;local y=35;function Fly()local z=Instance.new("BodyGyro",s)z.P=9e4;z.maxTorque=Vector3.new(9e9,9e9,9e9)z.cframe=s.CFrame;local A=Instance.new("BodyVelocity",s)A.velocity=Vector3.new(0,0.1,0)A.maxForce=Vector3.new(9e9,9e9,9e9)repeat wait()o.Character.Humanoid.PlatformStand=true;if v.l+v.r~=0 or v.f+v.b~=0 then y=y+.5+y/x;if y>x then y=x end elseif not(v.l+v.r~=0 or v.f+v.b~=0)and y~=0 then y=y-1;if y<0 then y=0 end end;if v.l+v.r~=0 or v.f+v.b~=0 then A.velocity=(game.Workspace.CurrentCamera.CoordinateFrame.lookVector*(v.f+v.b)+game.Workspace.CurrentCamera.CoordinateFrame*CFrame.new(v.l+v.r,(v.f+v.b)*.2,0).p-game.Workspace.CurrentCamera.CoordinateFrame.p)*y;w={f=v.f,b=v.b,l=v.l,r=v.r}elseif v.l+v.r==0 and v.f+v.b==0 and y~=0 then A.velocity=(game.Workspace.CurrentCamera.CoordinateFrame.lookVector*(w.f+w.b)+game.Workspace.CurrentCamera.CoordinateFrame*CFrame.new(w.l+w.r,(w.f+w.b)*.2,0).p-game.Workspace.CurrentCamera.CoordinateFrame.p)*y else A.velocity=Vector3.new(0,0.1,0)end;z.cframe=game.Workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad((v.f+v.b)*50*y/x),0,0)until not t;v={f=0,b=0,l=0,r=0}w={f=0,b=0,l=0,r=0}y=0;z:Destroy()A:Destroy()o.Character.Humanoid.PlatformStand=false end;mouse.KeyDown:connect(function(p)if p:lower()=="e"then if t then t=false else t=true;Fly()end elseif p:lower()=="w"then v.f=1 elseif p:lower()=="s"then v.b=-1 elseif p:lower()=="a"then v.l=-1 elseif p:lower()=="d"then v.r=1 end end)mouse.KeyUp:connect(function(p)if p:lower()=="w"then v.f=0 elseif p:lower()=="s"then v.b=0 elseif p:lower()=="a"then v.l=0 elseif p:lower()=="d"then v.r=0 end end)Fly()rconsoleinfo("Made "..game:GetService("Players").LocalPlayer.Name.." fly.")rconsoleinfo("Press E to toggle fly mode.")elseif f=="cmds"then rconsoleinfo[[
+--! Functions !--
+function arrest(c)d=game:GetService("Workspace")[c].HumanoidRootPart;e=game:GetService("Workspace").Remote.arrest;e:InvokeServer(d)end;
+function makechatmsg(text, color, font)a=game:GetService("StarterGui");a:SetCore("ChatMakeSystemMessage")({Text = text, Color = color, Font = font;})
 
-
-        bakahaxx - Prison Life
-
-        Commands
-
-  [1]      arrest all - Arrests all players.
-  [2]      superpunch - Become saitama. (Your punches instantly kill anyone)
-  [3]      removewalls - Remove the prison walls.
-  [4]      m9 - Gives you an M9.
-  [5]      ak47 - Gives you an AK-47.
-  [6]      fly - Makes you fly. Press E to toggle.
-
-  [-]      Yeah. There aren't that many commands.
-  [+]      I'm focusing on adding more to the commands menu,
-  [+]      and I'll a "help" command. It shows people cool things about bakahaxx.
-
-
-
-    ]]else rconsoleerr("Invalid command!")end;while a=="universal"do game.Players.LocalPlayer:Kick("\nUniversal is being worked on!\nWe currently only support Prison Life.")end end
+--! Game Checker !--
+if game.GameId == 73885730 then
+makechatmsg("Welcome to BakaHaxx, "..user.Name.."!", BrickColor.new("Cyan").Color, "Arcade")
+makechatmsg("Game supported | Prison Life", BrickColor.new("Cyan").Color, "Arcade")
+makechatmsg("Type .cmds to view a list of commands", BrickColor.new("Cyan").Color, "Arcade")
+loadstring(game:HttpGet("suslinkhere"))
+end
