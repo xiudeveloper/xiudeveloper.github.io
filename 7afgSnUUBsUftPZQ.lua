@@ -26,10 +26,6 @@ b::::::b                              k::::::k                          h:::::h
 	Text = "type :cmds to view commands",
 	Color = Color3.fromRGB(207, 96, 36)
 	})
-	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-	Text = "Your Prefix Is Currently : (enjoy)",
-	Color = Color3.fromRGB(207, 96, 36)
-	})
 	wait(0.8)
 	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
 	Text = "loaded scripts",
@@ -50,7 +46,7 @@ b::::::b                              k::::::k                          h:::::h
 	local Player = game:GetService("Players")
 	local LocalPlayer = Player.LocalPlayer
 	local PlayerScripts = LocalPlayer.PlayerScripts
-	local prefix = ":"
+	local prefix = "."
 
 	-- functions --
 	function loadchar(brickcolor)
@@ -1482,11 +1478,11 @@ end
                     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 			    elseif msg:match(prefix .. "barcodehub") then
 		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-		Text = "Barcodehub Continued By onceuponatimeidk#1766 Credits To Barcode (Disabled On Discord Though)",
+		Text = "Barcodehub continued By onceuponatimeidk#1766"
 		Color = Color3.fromRGB(220, 188, 129)
 	    })
 	    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-		Text = "Barcodehub Prefix Is Currently -",
+		Text = "barcodehub prefix is -",
 		Color = Color3.fromRGB(220, 188, 129)
 	    })
 	    
@@ -2418,130 +2414,130 @@ end
 
 				print[[
         Main Commands
-        :re - Respawns
-        :auto on - AutoRespawn
-        :auto off (off AutoRespawn)
-        :prefix - ,prefix (NewPrefixHere)
-        :nopunch - No Punch
-        :saim - silent aim lock
-        :lag - LAGS SERVER (on/off)
-        :mgun - MINI GUN SHOTGUN - LAGGY ASF
-        :lag off - LAGS SERVER (on/off)
-        :sg on - open gate (on/off)
-        :sg off - open gate (on/off)
-        :god on - op godmode (on/off)
-        :god off - op godmode (on/off)
-        :bring - Brings a player
-        :crim - makes you crim
-        :to (player) - Tp's to a player
-        :end - *DISCONNECTS* SERVER
-        :lguns on - Loopguns
-        :time - full bright
-        :lguns off - unloopguns
-        :barcodehub - another free admin
-        :fling - flings
-        :adonis - fe admin for any game
-        :close - Alt + F4
-        :weaponia - infinite ammo (DOES WORK NOW)
-        :k [i, g, c, all] - Teamkills
-        :walls on - on walls
-        :fences on - on fences
-        :doors on - on doors
-        :doors off - off doors
-        :fences off - off fences
-        :walls off - off walls
-        :ring - rings ears and everybody CAN hear it (doesnt bypass anti crash)
-        :opguns - mods all guns (might break)
-        :asa on - anti spam arrest (on/off)
-        :asa off - anti spam arrest (on/off)
-        :fix - Camera Fix
-        :btools - (delete certain walls)
-        :ca - click arrest
-        :tk - touch kill (goes away when you reset)
-        :ltk - touch kill (does not go away when you reset)
-        :asa on - op anti spam arrest (on/off)
-        :asa off - op anti spam arrest (on/off)
-        :ff on - op ff (on/off)
-        :ff off - op ff (on/off)
-        :scd on - opens crim door i believe (on/off)
-        :scd off - opens crim door i believe (on/off)
-        :slayers - a free admin that also they took it down so i put it on here
-        :saim - silent aim gui
-        :nolag - no swat lag
-        :al - anti spam arrest lag
-        :ws (number)
-        :jp (number)
-        :fling - flings everything that touches you
-        :invis - invisible as it says
-        :kcf - key card finder
-        :ka - kill aura (e to toggle)
-        :ar all - arrest all crims
-        :lock - anti taze
-        :chat - chat Bypass
-        :punish on (on/off) GOT RID OF TAZE ALL! (does work btw)
-        :punish off (on/off) GOT RID OF TAZE ALL! (does work btw)
-        :headless - Headless Head
-        :noleg - No Legs
-        :rgb on - Cycles Colors
-        :rgb off - (off) Cycles Colors
-        :sagui - not really a good spam arrest but kinda good
-        :slayers - slayers admin (kinda rare cuz they took it down)
-        :saui - better spam arrest i think
-        :rj - Rejoin
-        :clothes - Removes Prison Clothes
-        :m4 - Gives M4
-        :ak - Gives AK
-        :remi - Gives REMI
-        :m9 - Gives M9
-        :ab - Antibring (op breaks all guns)
+        .re - Respawns
+        .auto on - AutoRespawn
+        .auto off (off AutoRespawn)
+        .prefix - ,prefix (NewPrefixHere)
+        .nopunch - No Punch
+        .saim - silent aim lock
+        .lag - LAGS SERVER (on/off)
+        .mgun - MINI GUN SHOTGUN - LAGGY ASF
+        .lag off - LAGS SERVER (on/off)
+        .sg on - open gate (on/off)
+        .sg off - open gate (on/off)
+        .god on - op godmode (on/off)
+        .god off - op godmode (on/off)
+        .bring - Brings a player
+        .crim - makes you crim
+        .to (player) - Tp's to a player
+        .end - *DISCONNECTS* SERVER
+        .lguns on - Loopguns
+        .time - full bright
+        .lguns off - unloopguns
+        .barcodehub - another free admin
+        .fling - flings
+        .adonis - fe admin for any game
+        .close - Alt + F4
+        .weaponia - infinite ammo (DOES WORK NOW)
+        .k [i, g, c, all] - Teamkills
+        .walls on - on walls
+        .fences on - on fences
+        .doors on - on doors
+        .doors off - off doors
+        .fences off - off fences
+        .walls off - off walls
+        .ring - rings ears and everybody CAN hear it (doesnt bypass anti crash)
+        .opguns - mods all guns (might break)
+        .asa on - anti spam arrest (on/off)
+        .asa off - anti spam arrest (on/off)
+        .fix - Camera Fix
+        .btools - (delete certain walls)
+        .ca - click arrest
+        .tk - touch kill (goes away when you reset)
+        .ltk - touch kill (does not go away when you reset)
+        .asa on - op anti spam arrest (on/off)
+        .asa off - op anti spam arrest (on/off)
+        .ff on - op ff (on/off)
+        .ff off - op ff (on/off)
+        .scd on - opens crim door i believe (on/off)
+        .scd off - opens crim door i believe (on/off)
+        .slayers - a free admin that also they took it down so i put it on here
+        .saim - silent aim gui
+        .nolag - no swat lag
+        .al - anti spam arrest lag
+        .ws (number)
+        .jp (number)
+        .fling - flings everything that touches you
+        .invis - invisible as it says
+        .kcf - key card finder
+        .ka - kill aura (e to toggle)
+        .ar all - arrest all crims
+        .lock - anti taze
+        .chat - chat Bypass
+        .punish on (on/off) GOT RID OF TAZE ALL! (does work btw)
+        .punish off (on/off) GOT RID OF TAZE ALL! (does work btw)
+        .headless - Headless Head
+        .noleg - No Legs
+        .rgb on - Cycles Colors
+        .rgb off - (off) Cycles Colors
+        .sagui - not really a good spam arrest but kinda good
+        .slayers - slayers admin (kinda rare cuz they took it down)
+        .saui - better spam arrest i think
+        .rj - Rejoin
+        .clothes - Removes Prison Clothes
+        .m4 - Gives M4
+        .ak - Gives AK
+        .remi - Gives REMI
+        .m9 - Gives M9
+        .ab - Antibring (op breaks all guns)
 
 
         Teleports
-        :moutain
-        :empty
-        :safe
-        :back
+        .mountain
+        .empty
+        .safe
+        .back
         :gate
-        :flag
-        :cell
-        :roof
-        :cafe
-        :nex
-        :armory
-        :sewer
-        :unmap
-        :store
-        :gas
-        :bus
-        :bridge
-        :yard
-        :cbase
+        .flag
+        .cell
+        .roof
+        .cafe
+        .nex
+        .armory
+        .sewer
+        .unmap
+        .store
+        .gas
+        .bus
+        .bridge
+        .yard
+        .cbase
 
         	Teams
-        :t custom (NUMBER)
-        :t dr - DARK RED
-        :t g - DARK GREEN
-        :t p - PURPLE
-        :t fb - FAWN BROWN
-        :t mg - MID GRAY
-        :t hp - HOT PINK
-        :t t - TEAL (this works)
-        :t dt - DARK TAUPE
-        :t b - BLACK
-        :t c - CAMO
-        :t too - TOOTHPASTE (just use :t t)
-        :t rb - REALLY BLACK
-        :t rp - ROYAL PURPLE
-        :t sun - SUNRISE
-        :t lp - LIGHT PURPLE
-        :t lg - LIGHT GOLD
-        :t b - PASTEL BLUE
-        :t rl - REDDISH LILAC
-        :t y - PASTEL YELLOW
-        :crim
-        :g
-        :neu
-        :i
+        .t custom (NUMBER)
+        .t dr - DARK RED
+        .t g - DARK GREEN
+        .t p - PURPLE
+        .t fb - FAWN BROWN
+        .t mg - MID GRAY
+        .t hp - HOT PINK
+        .t t - TEAL (this works)
+        .t dt - DARK TAUPE
+        .t b - BLACK
+        .t c - CAMO
+        .t too - TOOTHPASTE (just use .t t)
+        .t rb - REALLY BLACK
+        .t rp - ROYAL PURPLE
+        .t sun - SUNRISE
+        .t lp - LIGHT PURPLE
+        .t lg - LIGHT GOLD
+        .t b - PASTEL BLUE
+        .t rl - REDDISH LILAC
+        .t y - PASTEL YELLOW
+        .crim
+        .g
+        .neu
+        .i
     ]]
 
 			end-- cmd end
