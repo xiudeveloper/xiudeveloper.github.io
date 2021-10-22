@@ -20,14 +20,9 @@ b::::::b                              k::::::k                          h:::::h
 
 --! Variables !--
 local user = game.Players.LocalPlayer
-
---! Functions !--
-function makechatmsg(text, color, font)a=game:GetService("StarterGui");a:SetCore("ChatMakeSystemMessage")({Text = text, Color = color, Font = font;})
+local scriptId = "7afgSnUUBsUftPZQ"
 
 --! Game Checker !--
 if game.GameId == 73885730 then
-makechatmsg("Welcome to BakaHaxx, "..user.Name.."!", BrickColor.new("Cyan").Color, "Arcade")
-makechatmsg("Game supported | Prison Life", BrickColor.new("Cyan").Color, "Arcade")
-makechatmsg("Type .cmds to view a list of commands", BrickColor.new("Cyan").Color, "Arcade")
-loadstring(game:HttpGet("https://bruh-lol.github.io/7afgSnUUBsUftPZQ.lua"))
+loadstring(game:HttpGet("https://bruh-lol.github.io/"..scriptId..".lua"))
 end
