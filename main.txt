@@ -1,0 +1,2 @@
+fatal: Could not download script; developer has set reason
+"Script not working. Will fix soon, sorry."
