@@ -1,8 +1,8 @@
 theme: jekyll-theme-cayman
  
 # Setup
-title:        [krnl]
-description: [key bypasser]
+title:        krnl
+description: key bypasser
 google_analytics: [""]
 baseurl:      ""
 paginate:     1
@@ -13,5 +13,3 @@ layout: single
 markdown: kramdown  
 
 include: ["_pages"]
-
-
